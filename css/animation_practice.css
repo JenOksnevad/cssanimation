@@ -1,0 +1,222 @@
+/* this is where all of your CSS styles go */
+
+@font-face{
+	font-family: 'Rye-Regular';
+	src:url(../fonts/rye/Rye-Regular.ttf) format('truetype');
+}
+
+html,body {
+	width: auto;
+	position: relative;
+	text-align: center;
+}
+
+.textbox {
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	height: 750px;
+	width: 800px;
+	margin-left: -400px;
+	margin-top: 0px;
+}
+
+.begin {
+	font-family: 'Rye-Regular';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+
+.gun1{
+	position: absolute;
+	left: 15%;
+	top: 85%;
+	margin-left: -150px;
+	margin-top: -150px;
+	transform-origin: 50% 50%;
+	padding-right: 0px;
+	animation: pistol_moves 4s infinite linear;
+	float: right;
+}
+
+.gun2{
+	position: absolute;
+	top: 85%;
+	margin-left: -150px;
+	margin-top: -150px;
+	transform-origin: 50% 50%;
+	animation: pistol2_moves 4s infinite linear;
+}
+
+.eastwood{
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+}
+
+@keyframes pistol_moves{
+	0% {transform: rotate(360deg);}
+	25% {transform: rotate(90deg);}
+	100% {transform: rotate(0deg) infinite ease;}
+}
+
+@keyframes pistol2_moves{
+	0% {transform: rotate(360deg);}
+	25% {transform: rotate(90deg);}
+	100% {transform: rotate(0deg) infinite ease;}
+}
+
+@keyframes c_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; left: 515px; color: brown;}
+}
+
+@keyframes l_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; color: brown;}
+}
+
+@keyframes i_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	65% {top: 180px}
+	100% {top: 600px; left: 530px; color: brown;}
+}
+
+@keyframes n_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; left: 600px; color: brown;}
+}
+
+@keyframes t_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; left: 180px; color: brown;}
+}
+
+@keyframes e_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; left: 15px; color: brown;}
+}
+
+@keyframes a_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	65% {top: 400px; left: 120px;}
+	100% {top: 600px; left: 140px; color: brown;}
+}
+
+@keyframes s_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	65% {top: 100px; right: 20px;}
+	100% {top: 600px; right: 50px; color: brown;}
+}
+
+@keyframes tt_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	65% {top: 111px; left: 111px;}
+	100% {top: 600px; left: 140px; color: brown;}
+}
+
+@keyframes w_moves{
+	0% {top: 0px; color: black;}
+	40%{top: 0px; color: black;}
+	100% {top: 600px; right: 300px; color: brown;}
+}
+
+@keyframes o_moves{
+	0% {top: 0px; color: black;}
+	40%{top: 0px; color: black;}
+	100% {top: 600px; right: 575px; color: brown;}
+}
+
+@keyframes oo_moves{
+	0% {top: 0px; right: 15px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; left: 25px; color: brown;}
+}
+
+@keyframes d_moves{
+	0% {top: 0px; color: black;}
+	40% {top: 0px; color: black;}
+	100% {top: 600px; right: 620px; color: brown;}
+}
+
+.C{
+	position: relative;
+	animation: c_moves 6s cubic-bezier(.17,.67,1,.3)forwards;
+}
+
+.l{
+	position: relative;
+	animation: l_moves 6s  cubic-bezier(.28,.04,1,.3)forwards; 
+}
+
+.i{
+	position: relative;
+	animation: i_moves 6s  cubic-bezier(.44,.46,.5,1.13)forwards;
+}
+
+.n{
+	position: relative;
+	animation: n_moves 6s cubic-bezier(.28,.04,1,.3)forwards;
+
+}
+
+.t{
+	position: relative;
+	animation: t_moves 6s  cubic-bezier(1,.17,.5,1.13)forwards;
+}
+
+.e{
+	position: relative;
+	animation: e_moves 6s  cubic-bezier(.06,.66,1,.28)forwards;
+}
+
+.a{
+	position: relative;
+	animation: a_moves 6s  cubic-bezier(.06,.66,.54,-0.29)forwards;
+}
+
+.s{
+	position: relative;
+	animation: s_moves 6s  cubic-bezier(.06,.66,.85,.54)forwards;
+}
+
+.tt{
+	position: relative;
+	animation: tt_moves 6s  cubic-bezier(.21,.26,.85,.54)forwards;
+}
+
+.w{
+	position: relative;
+	animation: w_moves 6s  cubic-bezier(.1,.4,.97,.42)forwards;
+}
+
+.o{
+	position: relative;
+	animation: o_moves 6s  cubic-bezier(.18,.22,.31,1.09)forwards;
+}
+
+.oo{
+	position: relative;
+	animation: oo_moves 6s  cubic-bezier(0,.53,0,1.2)forwards;
+}
+
+.d{
+	position: relative;
+	animation: d_moves 6s  cubic-bezier(0,.53,.52,-0.11)forwards;
+}
+
+
+
+
